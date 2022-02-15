@@ -1,0 +1,11 @@
+{
+  "appTitle": "Movies",
+  "sortByName": "By name",
+  "sortByDate": "By release date",
+  "sortByRating": "By rating",
+  "aboutMovie": "About movie",
+  "releaseDate": "Release date:",
+  "budget": "Budget",
+  "errorMessage": "Oops! Something gets wrong!",
+  "tryAgain": "Try again"
+}

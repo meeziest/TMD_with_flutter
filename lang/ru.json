@@ -1,0 +1,11 @@
+{
+  "appTitle": "Фильмы",
+  "sortByName": "По названию",
+  "sortByDate": "По дате выхода",
+  "sortByRating": "По рейтингу",
+  "aboutMovie": "О фильме",
+  "releaseDate": "Дата выхода:",
+  "budget": "Доход",
+  "errorMessage": "Упс! Что то пошло не так!",
+  "tryAgain": "Попробовать снова"
+}
