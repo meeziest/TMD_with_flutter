@@ -10,8 +10,6 @@ import 'package:popular_movies_flutter/view/widgets/drop_down_button.dart';
 import 'package:popular_movies_flutter/view/widgets/movies_list.dart';
 
 class HomeScreen extends StatelessWidget{
-  static const String id = "home_screen";
-
   const HomeScreen({Key? key}) : super(key: key);
 
   @override

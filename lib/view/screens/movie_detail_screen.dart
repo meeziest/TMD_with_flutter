@@ -14,7 +14,6 @@ import 'package:popular_movies_flutter/view/widgets/error_message.dart';
 import 'package:popular_movies_flutter/view/widgets/movie_detail_card.dart';
 
 class MovieDetailScreen extends StatelessWidget {
-  static const String id = "movie_detail_screen";
   final int movieId;
 
   const MovieDetailScreen({Key? key, required this.movieId}) : super(key: key);
@@ -37,22 +36,21 @@ class MovieDetailScreen extends StatelessWidget {
                 return const ErrorMessage();
               case ListStatus.success:
                 return SafeArea(
-                  child: Column(
+                  child: ListView(
                     children: [
                       Stack(
                         children: [
-                          Ink.image(
+                          Image(
                             image: NetworkImage(kImagePath + movieDetail.backPoster),
+                            fit : BoxFit.cover,
                             height: 312,
-                            child:
-                            Container(
-                              height: 100.0,
-                              decoration: const BoxDecoration(
-                                  color: Colors.white,
-                                  gradient: kBackPosterGradient
-                              ),
+                          ),
+                          Container(
+                            height: 312.0,
+                            decoration: const BoxDecoration(
+                                color: Colors.white,
+                                gradient: kBackPosterGradient
                             ),
-                            fit: BoxFit.cover,
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -95,18 +93,17 @@ class MovieDetailScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: 43),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 16 ,left: 16),
-                          child: ListView(
-                            children: [
-                              Text(TKeys.budget.translate(context),style: kMainTextStyle),
-                              const SizedBox(height:8),
-                              Text(genres, style: kGenresTextStyle),
-                              const SizedBox(height:9),
-                              Text(movieDetail.overview, style: kMainTextStyle),
-                            ],
-                          ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 16 ,left: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(TKeys.budget.translate(context),style: kMainTextStyle),
+                            const SizedBox(height:8),
+                            Text(genres, style: kGenresTextStyle),
+                            const SizedBox(height:9),
+                            Text(movieDetail.overview, style: kMainTextStyle),
+                          ],
                         ),
                       )
                     ],

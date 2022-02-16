@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,8 +8,6 @@ import 'package:popular_movies_flutter/utils/colors.dart';
 import 'package:popular_movies_flutter/utils/constants.dart';
 
 class ErrorMessage extends StatefulWidget {
-  static const String id = "error_screen";
-
   const ErrorMessage({Key? key}) : super(key: key);
 
   @override
@@ -35,7 +34,11 @@ class _ErrorMessageState extends State<ErrorMessage> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(TKeys.tryAgain.translate(context), style: kMainTextStyle),
+                  child: AutoSizeText(
+                      TKeys.tryAgain.translate(context),
+                      maxLines: 1,
+                      style: kMainTextStyle
+                  ),
                   color: Colors.white12,
                 ),
               ),

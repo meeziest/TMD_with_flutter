@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
         supportedLocales: LocalizationService.supportedLocales,
         localizationsDelegates: LocalizationService.localizationsDelegate,
         theme: ThemeData.dark(),
-        initialRoute: HomeScreen.id,
         home: MultiBlocProvider(
           providers: [
             BlocProvider<SortOptionsCubit>(
