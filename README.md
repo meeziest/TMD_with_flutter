@@ -2,9 +2,9 @@
 
 A Flutter project - popular movies app with using THE MOVIE DATABASE(TMD).
 
-(👉ﾟヮﾟ)👉 - bloc pattern__
-(👉ﾟヮﾟ)👉 - localization ru en__
-(👉ﾟヮﾟ)👉 - isolates__
-(👉ﾟヮﾟ)👉 - async await__
-(👉ﾟヮﾟ)👉 - exception handling__
+(👉ﾟヮﾟ)👉 - bloc pattern<br />
+(👉ﾟヮﾟ)👉 - localization ru en<br />
+(👉ﾟヮﾟ)👉 - isolates<br />
+(👉ﾟヮﾟ)👉 - async await<br />
+(👉ﾟヮﾟ)👉 - exception handling<br />
 
