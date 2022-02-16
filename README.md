@@ -1,4 +1,10 @@
 # popular_movies_flutter
 
-A new Flutter project - popular movies app with localization using THE MOVIE DATABASE(TMD) and Bloc pattern.
+A Flutter project - popular movies app with using THE MOVIE DATABASE(TMD).
+
+(👉ﾟヮﾟ)👉 - bloc pattern 
+(👉ﾟヮﾟ)👉 - localization ru en
+(👉ﾟヮﾟ)👉 - isolates 
+(👉ﾟヮﾟ)👉 - async await
+(👉ﾟヮﾟ)👉 - exception handling
 
